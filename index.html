@@ -8,14 +8,21 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Shantell+Sans:ital,wght@0,400;0,600;0,800;1,400&family=Atkinson+Hyperlegible:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Alvin's artist mark, redrawn from his logo; reused below with <use href="#alvin-mark"> -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <symbol id="alvin-mark" viewBox="22 104 350 370">
+      <g fill="none" stroke="currentColor" style="stroke-width: var(--mark-w, 13)" stroke-linejoin="miter"><polygon points="139,124 246,124 192.5,198"/><polyline points="37,218 131,218 131,270 263,270 263,218 358,218"/><polyline points="34,345 129,345 129,399 164,399"/><polyline points="353,345 263,345 263,399 229,399"/><line x1="199" y1="416" x2="199" y2="459"/></g>
+    </symbol>
+  </svg>
 
   <header class="topbar">
     <div class="topbar-inner">
     <a class="logo" href="#top" aria-label="Alvin Paper Works, back to top">
-      <span class="logo-mark" aria-hidden="true"></span>
+      <svg class="logo-mark" aria-hidden="true"><use href="#alvin-mark"/></svg>
       Alvin Paper Works
     </a>
     <nav aria-label="Main">
@@ -170,6 +177,7 @@
       <div class="note">
         <span class="tape tape-a" aria-hidden="true"></span>
         <span class="tape tape-b" aria-hidden="true"></span>
+        <span class="stamp" aria-hidden="true"><svg><use href="#alvin-mark"/></svg></span>
         <h2 id="about-title">Hi, I'm Alvin.</h2>
         <p>I make very small things out of paper. Some are little figures of characters I like. Others work like the real thing: puppets with bending joints, scissors that fold, a claw machine you can pinch between two fingers.</p>
         <p>Everything is cut, folded and glued by hand.</p>
@@ -184,6 +192,7 @@
   </main>
 
   <footer class="foot">
+    <svg class="foot-mark" aria-hidden="true"><use href="#alvin-mark"/></svg>
     <p>&copy; <span id="year"></span> Alvin Paper Works. All pieces made by hand.</p>
   </footer>
 
